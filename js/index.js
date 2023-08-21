@@ -30,11 +30,16 @@ AOS.init({
 
 /* Swipper */
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 12,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  
+  breakpoints: {
+    599:{
+      slidesPerView: 3,
+    spaceBetween: 30,
+    }
+  }
 });
