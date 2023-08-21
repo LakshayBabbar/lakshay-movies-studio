@@ -10,7 +10,7 @@ function SendEmail(){
             Host : "smtp.elasticemail.com",
             Username : "lakshaybabbar0118@outlook.com",
             Password : "F6B7EC0F8962BFCFBB1FD0AD14DCDD95C047",
-            To : 'lakshaymovies@gmail.com',
+            To : 'lakshaybabbar0118@gmail.com',
             From : "lakshaybabbar0118@outlook.com",
             Subject : subject.value,
             Body : "Name: " + name.value
@@ -24,13 +24,13 @@ function SendEmail(){
 
 /* AOS */
 AOS.init({
-  offset: 50,
+  offset: 120,
   duration: 500,
 });
 
 /* Swipper */
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 12,
   pagination: {
     el: ".swiper-pagination",
