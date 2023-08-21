@@ -354,7 +354,6 @@ footer{
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
-    line-height: 1rem;
 }
 .footer-content p{
     max-width: 500px;
@@ -541,7 +540,7 @@ footer{
     }
 
     .contact-div img {
-        width: 80%;
+        width: 20rem;
         margin-top: 5rem;
         margin: 4rem 0;
     }
