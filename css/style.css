@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    /*     font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    color: #fefefe;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: url(../src/bg1.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: rgb(255, 136, 0);
+    --secondary: rgb(255, 204, 0);
+}
+
+.navbar {
+    font-weight: 800;
+    background: transparent;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cdetails {
+    margin-right: 5vw;
+}
+
+.cdetails h4 {
+    font-size: 2rem;
+}
+
+.cdetails h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.cdetails h4 span,
+h1 span {
+    color: var(--primary);
+}
+
+.navbar-brand span {
+    color: var(--primary);
+}
+
+.cdetails p {
+    font-size: 1.2rem;
+}
+
+.btn,
+.btna {
+    background: transparent;
+    border: 1px solid var(--primary);
+    width: 11rem;
+    height: 3.3rem;
+    font-size: 1.5rem;
+    color: var(--primary);
+    border-radius: 0 1rem 0 1rem;
+    margin-top: 2rem;
+    transition: 1s;
+    text-decoration: none;
+    box-shadow: 0 0 20px var(--primary), 0 0 20px var(--primary);
+}
+
+.btn:hover {
+    border-radius: 20px;
+    background: var(--primary);
+    color: #fefefe;
+    transition: 1s;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.img {
+    height: 80vh;
+}
+
+.img img {
+    border-radius: 50% 50% 0% 0% / 30% 30% 30% 30%;
+    height: 80vh;
+    width: 30vw;
+    padding: 1rem;
+    box-shadow: 0 0 30px var(--primary), 0 0 40px var(--primary);
+    animation: coloring 5s linear infinite;
+}
+
+@keyframes coloring {
+    0% {
+        box-shadow: 0 0 60px var(--primary), 0 0 70px var(--primary);
+    }
+
+    50% {
+        box-shadow: 0 0 60px var(--secondary), 0 0 70px var(--secondary);
+    }
+
+    100% {
+        box-shadow: 0 0 60px var(--primary), 0 0 70px var(--primary);
+    }
+}
+
+#galary {
+    margin-top: 10rem;
+}
+
+.galary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  0 12.5rem 0 12.5rem;
+}
+
+.galary h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 800;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+}
+
+.layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.layer img {
+    width: 25rem;
+    margin: 1rem;
+}
+
+.galary h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: 800;
+}
+
+.galary h2 span {
+    color: var(--primary);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btna a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.btna:hover {
+    border-radius: 20px;
+    background-color: var(--primary);
+    transition: 1s;
+}
+
+.btna a:hover {
+    color: #fefefe;
+}
+
+#about {
+    margin-top: 10rem;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2 img {
+    border-radius: 47% 53% 67% 33% / 57% 56% 44% 43%;
+    width: 30rem;
+    margin-left: 5rem;
+    box-shadow: 0 0 50px rgb(255, 131, 180), 0 0 60px rgb(255, 131, 180);
+    animation: spinny 4s linear infinite;
+    transform-origin: 100% 100%;
+}
+
+@keyframes spinny {
+    0% {
+        border-radius: 100%;
+    }
+
+    25% {
+        border-radius: 53% 47% 50% 50% / 75% 71% 29% 25%;
+        box-shadow: 0 0 50px rgb(251, 216, 57), 0 0 50px rgb(255, 219, 60);
+    }
+
+    50% {
+        border-radius: 42% 58% 50% 50% / 29% 25% 75% 71%;
+        box-shadow: 0 0 50px rgb(255, 131, 180), 0 0 60px rgb(255, 131, 180);
+    }
+
+    100% {
+        border-radius: 100%;
+    }
+}
+
+.detail h1 {
+    color: #fefefe;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.detail h1 span {
+    color: rgb(255, 77, 77);
+}
+
+.detail h3 {
+    color: rgb(255, 131, 180);
+    font-size: 2.5rem;
+}
+
+.detail p {
+    color: #fefefec8;
+    font-size: 1.5rem;
+}
+
+.detail h1,
+h3,
+p {
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin-top: 10rem;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+
+.contact h1 span {
+    color: var(--primary);
+}
+
+.contact-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textsec {
+    display: flex;
+    justify-content: center;
+}
+
+.fcontent .textsec input {
+    border-radius: 10px;
+    width: 20rem;
+    height: 3rem;
+    background: transparent;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 10px var(--primary), 0 0 10px var(--primary);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.fcontent textarea {
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 10px var(--primary), 0 0 10px var(--primary);
+    margin: 1rem;
+    padding: 20px;
+    resize: vertical;
+    font-size: 1.2rem;
+    width: 42rem;
+}
+
+.fcontent .textsec input::placeholder,
+.fcontent textarea::placeholder {
+    font-size: 1.2rem;
+}
+
+.contact-div img {
+    width: 40%;
+    margin: 0 5rem 5rem 0;
+    border-radius: 2rem;
+    box-shadow: 0 0 50px rgb(56, 3, 180), 0 0 60px rgb(56, 3, 180);
+}
+
+#footer {
+    margin-top: 10rem;
+}
