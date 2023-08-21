@@ -36,10 +36,5 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  breakpoints: {
-    599:{
-      slidesPerView: 3,
-    spaceBetween: 30,
-    }
-  }
+  
 });
