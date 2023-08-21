@@ -397,7 +397,7 @@ footer{
 
     .cdetails {
         margin-right: 0;
-        padding-left: 2rem;
+        padding: 0 2rem 0 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -515,14 +515,6 @@ footer{
     .layer img {
         width: 80vw;
     }
-
-    .swiper-wrapper {
-        padding-bottom: 2rem;
-        background: #fefefe;
-    }
-
-   
-
     .contact h1 {
         font-size: 4rem;
     }
