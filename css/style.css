@@ -384,9 +384,6 @@ footer{
 
 
 @media only screen and (max-width: 768px) {
-    *{
-        overflow-x: hidden;
-    }
     #conatiner, #about, #gallery, #footer, #contact {
         margin-top: 5rem;
     }
