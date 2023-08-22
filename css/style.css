@@ -400,6 +400,9 @@ footer{
     .detail {
         padding-left: 4rem;
     }
+    .gallery{
+        padding: 0 5rem 0 5rem;
+    }
     .contact-div {
         flex-direction: column-reverse;
         padding: 0;
@@ -433,13 +436,11 @@ footer{
     .detail p{
         font-size: 1.2rem;
     }
+
 }
 @media only screen and (max-width: 979px) {
     .img2 img {
         width: 17rem;
-    }
-    .gallery{
-        padding: 0 5rem 0 5rem;
     }
 }
 @media only screen and (max-width: 900px) {
