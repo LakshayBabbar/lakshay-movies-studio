@@ -1,3 +1,4 @@
+/* Email */
 const form = document.querySelector('.contact-form');
 function SendEmail(){
     const name = document.querySelector('.name'),
