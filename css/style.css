@@ -513,6 +513,10 @@ footer{
     .layer img {
         width: 80vw;
     }
+    .swiper-wrapper {
+        padding-bottom: 2rem;
+        background: #fefefe;
+}
     .contact h1 {
         font-size: 4rem;
     }
