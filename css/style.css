@@ -112,18 +112,6 @@ h1 span {
 
 
 
-.container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container2 h1 {
-    font-size: 5rem;
-    font-weight: 800;
-    margin-bottom: 4rem;
-}
 
 .about {
     display: flex;
@@ -175,7 +163,7 @@ h1 span {
 }
 
 .detail h1 span {
-    color: rgb(255, 77, 77);
+    color: var(--primary);
 }
 
 .detail h3 {
@@ -572,7 +560,6 @@ footer{
     }
     .swiper-wrapper {
         padding-bottom: 2rem;
-        background: #fefefe;
 }
     .contact h1 {
         font-size: 4rem;
@@ -597,4 +584,9 @@ footer{
     }
 
     
+}
+@media only screen and (max-width: 599px) {
+    .swiper-wrapper {
+        background: #fefefe;
+}
 }
