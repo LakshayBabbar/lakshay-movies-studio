@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "type": "WEEDING SHOOT",
+    "desc": "Create Amazing Movies with Delhi's Best Movie Makers",
+    "img": "/4.jpg"
+  },
+  {
+    "id": 1,
+    "type": "STILL",
+    "desc": "Create Amazing Movies with Delhi's Best Movie Makers",
+    "img": "/4.jpg"
+  },
+  {
+    "id": 2,
+    "type": "PRE WEEDING SHOOT",
+    "desc": "Create Amazing Movies with Delhi's Best Movie Makers",
+    "img": "/4.jpg"
+  },
+  {
+    "id": 3,
+    "type": "DRONE SHOOTING",
+    "desc": "Create Amazing Movies with Delhi's Best Movie Makers",
+    "img": "/4.jpg"
+  }
+]
