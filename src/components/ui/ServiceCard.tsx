@@ -23,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardType> = ({ data }) => {
             className="w-full h-auto hover:scale-110 transition-all duration-300 rounded-xl"
           />
         </div>
-        <span className="bg-yellow-400 p-4 absolute -bottom-5">
+        <span className="bg-yellow-600 p-4 absolute -bottom-5">
           {data.type}
         </span>
       </div>

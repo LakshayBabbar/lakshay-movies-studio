@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
     if (!user) {
       return NextResponse.json(
         {
-          error: "User not found",
+          message: "User not found",
           success: false,
         },
         { status: 404 }
@@ -23,14 +23,14 @@ export async function POST(req: NextRequest) {
     if (!isValid) {
       return NextResponse.json(
         {
-          error: "Invalid Credentials",
+          message: "Invalid Credentials",
           success: false,
         },
         { status: 401 }
       );
     }
     const token = await generateToken(
-      { username },
+      { username, isAdmin: user.isAdmin },
       process.env.ACCESS_SECRET_KEY!
     );
     const res = NextResponse.json({
@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
   } catch (error: any) {
     return NextResponse.json(
       {
-        error: error.message,
+        message: error.message,
         success: false,
       },
       { status: 500 }

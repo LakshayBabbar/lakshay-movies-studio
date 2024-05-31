@@ -23,7 +23,7 @@ export const POST = async (req: NextRequest) => {
     if (!file) {
       return NextResponse.json(
         {
-          error: "No image found",
+          message: "No image found",
           success: false,
         },
         { status: 404 }
@@ -39,7 +39,7 @@ export const POST = async (req: NextRequest) => {
               reject(error);
               return NextResponse.json(
                 {
-                  error: `Error while uplading file: ${error.message}`,
+                  message: `Error while uplading file: ${error.message}`,
                   success: false,
                 },
                 { status: 400 }
@@ -67,7 +67,7 @@ export const POST = async (req: NextRequest) => {
   } catch (error: any) {
     return NextResponse.json(
       {
-        error: error.message,
+        message: error.message,
         success: false,
       },
       { status: 500 }

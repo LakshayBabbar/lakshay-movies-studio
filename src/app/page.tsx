@@ -52,7 +52,7 @@ export default function Home() {
         <p className="text-xl">
           We take care of all your film and still production related needs.
         </p>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6 relative">
           <div className="w-2/4 h-96 rounded-3xl overflow-hidden shadow-xl relative">
             <Image
               src="/a.jpg"
@@ -101,6 +101,7 @@ export default function Home() {
               Cinametic Shoots
             </p>
           </div>
+        <div className="absolute size-96 top-60 bg-slate-700 blur-[200px] rounded-full -z-10" />
         </div>
         <div className="mt-20 grid grid-cols-4 gap-5">
           {services.map((item) => {
